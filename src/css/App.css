@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3c3c3c;
+}
+
+body,
+button,
+input,
+label {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 500px;
+    margin: 100px auto 0;
+}
+
+.todo {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-header {
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.todo-header h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.todo-header .input-group {
+    position: relative;
+    display: flex;
+    border-radius: 9999px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+.todo-header .input-group input {
+    border: none;
+    background-color: #f1f1f1;
+    height: 45px;
+    padding: 20px 105px 20px 20px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+}
+
+.todo-header .input-group button {
+    padding: 0 30px;
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 9999px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.todo-body {
+    padding: 15px;
+}
+
+.todo-body ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-body ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.todo-body ul li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-body ul li div {
+    display: flex;
+    align-items: center;
+}
+
+.todo-body ul li label {
+    user-select: none;
+    cursor: pointer;
+}
+
+.todo-body ul li input[type="checkbox"]:checked+label {
+    text-decoration: line-through;
+}
+
+.todo-body ul li button {
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #dc3545;
+    color: #fff;
+    width: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    margin-left: 20px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 100%;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.todo-body ul li button:hover {
+    background-color: darkred;
+}
+
+.output {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 30px;
+}
